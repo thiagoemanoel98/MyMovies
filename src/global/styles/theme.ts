@@ -9,6 +9,9 @@ export default {
     orange: '#F1EE23',
     black: '#000000',
     white: '#fff',
+
+    commet: '#67686D',
+    ferry: '#3a3f47',
   },
 
   fonts: {

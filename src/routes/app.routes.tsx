@@ -20,18 +20,18 @@ export default function AppRoutes() {
         headerShown: false,
         tabBarHideOnKeyboard: true,
         tabBarShowLabel: true,
-        tabBarActiveTintColor: '#F5F8FA',
-        tabBarInactiveTintColor: '#471405',
+        tabBarActiveTintColor: Theme.colors.secundary,
+        tabBarInactiveTintColor: Theme.colors.commet,
         tabBarLabelStyle: {
           fontSize: 12,
           paddingBottom: RFValue(4),
         },
-        // 62
         tabBarStyle: {
-          height: RFValue(48),
+          height: RFValue(52),
           paddingTop: 2,
           backgroundColor: Theme.colors.primary,
-          borderTopWidth: 0,
+          borderTopWidth: 1,
+          borderTopColor: Theme.colors.secundary,
         },
       }}>
       <Tab.Screen
@@ -40,13 +40,7 @@ export default function AppRoutes() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => {
-            return (
-              <Ionicons
-                name="ios-newspaper-sharp"
-                size={size * 0.9}
-                color={color}
-              />
-            );
+            return <Ionicons name="home-outline" size={size} color={color} />;
           },
         }}
       />
@@ -56,13 +50,7 @@ export default function AppRoutes() {
         options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({color, size}) => {
-            return (
-              <Ionicons
-                name="ios-newspaper-sharp"
-                size={size * 0.9}
-                color={color}
-              />
-            );
+            return <Ionicons name="search-outline" size={size} color={color} />;
           },
         }}
       />
@@ -74,7 +62,7 @@ export default function AppRoutes() {
           tabBarIcon: ({color, size}) => {
             return (
               <Ionicons
-                name="ios-newspaper-sharp"
+                name="md-bookmark-outline"
                 size={size * 0.9}
                 color={color}
               />

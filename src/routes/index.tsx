@@ -1,7 +1,8 @@
 import * as React from 'react';
-import {NavigationContainer, useTheme} from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import {SafeAreaView, StatusBar} from 'react-native';
 import AppRoutes from './app.routes';
+import {useTheme} from 'styled-components';
 
 export function Routes() {
   const theme = useTheme();

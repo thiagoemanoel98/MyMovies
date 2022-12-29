@@ -1,8 +1,16 @@
 import React from 'react';
-import {Text} from 'react-native';
+import SearchInput from '../../components/SearchInput';
+
+import * as S from './styles';
 
 const HomeView: React.FC = () => {
-  return <Text>Pagina Home</Text>;
+  return (
+    <S.Container>
+      <S.GreetingsText>O que você deseja assistir?</S.GreetingsText>
+
+      <SearchInput />
+    </S.Container>
+  );
 };
 
 export default HomeView;
