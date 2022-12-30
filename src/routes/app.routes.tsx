@@ -3,7 +3,7 @@ import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {useTheme} from 'styled-components';
-import HomeView from '../pages/Home/View';
+import HomeView from '../pages/Home/view';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import WatchListView from '../pages/WatchList/View';
 
