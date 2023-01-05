@@ -12,6 +12,7 @@ export const SearchArea = styled.View`
 
 export const SearchInput = styled.TextInput`
   width: 90%;
+  color: ${({theme}) => theme.colors.white};
 `;
 
 export const SearchIcon = styled(Ionicons)`

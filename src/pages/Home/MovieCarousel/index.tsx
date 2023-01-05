@@ -22,8 +22,6 @@ export default function MovieCarousel() {
           </TouchableOpacity>
         )}
       />
-
-      <Text>index</Text>
     </S.Container>
   );
 }
