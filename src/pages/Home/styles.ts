@@ -24,6 +24,13 @@ export const ContentArea = styled.View`
 export const CategoryArea = styled.View`
   flex-direction: row;
   margin-left: 22px;
+  height: 50px;
+`;
+
+export const ScrollCategoryArea = styled.View`
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 50px;
 `;
 
 export const CategoryButton = styled.Pressable`

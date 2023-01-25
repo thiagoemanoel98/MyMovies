@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import {RFValue} from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
-  height: 40%;
+  height: 45%;
 `;
 
 export const MoviePoster = styled.Image`
