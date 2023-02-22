@@ -1,6 +1,6 @@
 import React from 'react';
 import {ScrollView} from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import {RFValue} from 'react-native-responsive-fontsize';
 import MoviePoster from '../../components/MoviePoster';
 import SearchInput from '../../components/SearchInput';
 import MovieCarousel from './MovieCarousel';
