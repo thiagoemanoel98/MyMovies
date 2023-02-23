@@ -35,7 +35,7 @@ export default function AppRoutes() {
         },
       }}>
       <Tab.Screen
-        name="Home"
+        name="StackRoutesHome"
         component={StackRoutesHome}
         options={{
           tabBarLabel: 'Home',

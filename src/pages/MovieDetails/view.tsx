@@ -20,11 +20,28 @@ const MovieDetailsView: React.FC = () => {
         <S.PageTitle>Detalhes</S.PageTitle>
         <S.BookMarkIcon name="bookmark-o" />
       </S.Header>
-      <S.BackdropMovie
-        source={{
-          uri: `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`,
-        }}
-      />
+
+      <S.TopArea>
+        <S.BackdropMovie
+          source={{
+            uri: `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`,
+          }}
+        />
+        <S.RatingArea>
+          <S.StarIcon name="star-o" />
+          <S.RatingValue>{movie.vote_average}</S.RatingValue>
+        </S.RatingArea>
+      </S.TopArea>
+      <S.TitleArea>
+        <S.MoviePoster
+          source={{
+            uri: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
+          }}
+        />
+        <S.MovieName>
+          {movie.title}
+        </S.MovieName>
+      </S.TitleArea>
     </S.Container>
   );
 };

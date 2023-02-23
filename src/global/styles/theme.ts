@@ -6,12 +6,13 @@ export default {
     shape: '#FFFFFF',
     text1: '#EEEEEE',
 
-    orange: '#F1EE23',
+    orange: '#FF8700',
     black: '#000000',
     white: '#fff',
 
     commet: '#67686D',
     ferry: '#3a3f47',
+    opacity: 'rgba(37, 40, 54, 0.7)',
   },
 
   fonts: {
