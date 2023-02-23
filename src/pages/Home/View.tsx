@@ -9,7 +9,7 @@ import * as S from './styles';
 import useHomeViewModel from './view.model';
 
 const HomeView: React.FC = () => {
-  const {categorySelected, setCategorySelected} = useHomeViewModel();
+  const {categorySelected, setCategorySelected, movies} = useHomeViewModel();
 
   return (
     <S.Container>
