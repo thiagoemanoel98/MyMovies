@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {IMovie} from '../../models/movie';
+import {IMovie} from '../../common/models/movie';
 import MoviesShow from '../../services/moviesShow';
 
 const useHomeModel = () => {

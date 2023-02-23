@@ -3,9 +3,9 @@ import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {useTheme} from 'styled-components';
-import HomeView from '../pages/Home/view';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import WatchListView from '../pages/WatchList/View';
+import StackRoutesHome from './StackRoutesHome';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,7 +15,7 @@ export default function AppRoutes() {
   return (
     <Tab.Navigator
       backBehavior="none"
-      initialRouteName="Feed"
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,
@@ -36,7 +36,7 @@ export default function AppRoutes() {
       }}>
       <Tab.Screen
         name="Home"
-        component={HomeView}
+        component={StackRoutesHome}
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => {
@@ -46,7 +46,7 @@ export default function AppRoutes() {
       />
       <Tab.Screen
         name="Search"
-        component={HomeView}
+        component={WatchListView}
         options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({color, size}) => {

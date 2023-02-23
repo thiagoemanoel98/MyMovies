@@ -1,5 +1,5 @@
 import {AxiosPromise} from 'axios';
-import {IResponseAPIMovie} from '../models/responseAPIMovie';
+import {IResponseAPIMovie} from '../common/models/responseAPIMovie';
 import api from './api';
 
 class MoviesShow {
