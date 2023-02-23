@@ -16,7 +16,7 @@ const HomeView: React.FC = () => {
       <S.GreetingsText>O que você deseja assistir?</S.GreetingsText>
       <SearchInput />
       <S.ContentArea>
-        <MovieCarousel />
+        <MovieCarousel movies={movies} />
 
         <S.ScrollCategoryArea>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
