@@ -1,9 +1,9 @@
 import React from 'react';
-import {useRoute} from '@react-navigation/native';
-import {Text} from 'react-native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 
 import {IMovie} from '../../common/models/movie';
 import * as S from './styles';
+import {ScreenNavigationProp} from '../../common/models/screenNavigationProp';
 
 interface IRouteParams {
   movie: IMovie;
@@ -11,12 +11,20 @@ interface IRouteParams {
 const MovieDetailsView: React.FC = () => {
   const route = useRoute();
   const {movie} = route.params as IRouteParams;
-
-  console.log('chegou:', movie);
+  const {goBack} = useNavigation<ScreenNavigationProp>();
 
   return (
     <S.Container>
-      <Text>Movie Details</Text>
+      <S.Header>
+        <S.ArrowLeftIcon name="chevron-left" onPress={goBack} />
+        <S.PageTitle>Detalhes</S.PageTitle>
+        <S.BookMarkIcon name="bookmark-o" />
+      </S.Header>
+      <S.BackdropMovie
+        source={{
+          uri: `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`,
+        }}
+      />
     </S.Container>
   );
 };
