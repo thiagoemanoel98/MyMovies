@@ -10,6 +10,7 @@ export default {
     black: '#000000',
     white: '#fff',
 
+    darkGrayishBlue: '#92929D',
     commet: '#67686D',
     ferry: '#3a3f47',
     opacity: 'rgba(37, 40, 54, 0.7)',
